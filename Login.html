@@ -3,15 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login page-heal</title>
+    <title>Login - Heal Hospital</title>
     <link rel="icon" href="./Screenshot 2026-01-13 081242.png" />
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <div class="login">
-      <input type="text" placeholder="Enter email" required />
-      <input type="password" placeholder="Enter password" required />
-      <a href="./home.html"><button>Login</button></a>
+    <div class="login-container">
+      <div class="login-box">
+        <img src="./Screenshot 2026-01-13 081242.png" alt="Heal Hospital Logo" class="login-logo">
+        <h2>Welcome Back</h2>
+        
+        <form action="./home.html" method="get">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+          </div>
+          
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        
+        <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
+      </div>
     </div>
   </body>
 </html>
