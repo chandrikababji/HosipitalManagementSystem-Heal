@@ -15,7 +15,7 @@ nav{
 }
 
 /* ----------  LOGO  ---------- */
-.nav-logo img{ height:50px; }
+.nav-logo img{ height:50px; width: auto; }
 
 /* ----------  LINKS ROW  ---------- */
 .redirects{
