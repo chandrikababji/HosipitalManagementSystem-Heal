@@ -1,40 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact details - Heal</title>
-    <link rel="icon" href="./Screenshot 2026-01-13 081242.png" />
-    <link rel="stylesheet" href="./home.css" />
-    <link rel="stylesheet" href="./contact.css"/>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Heal</title>
+    <link rel="icon" href="./Screenshot 2026-01-13 081242.png"/>
+    <link rel="stylesheet" href="./home.css"/>
+    <link rel="stylesheet" href="./contact.css">
+    <!-- font-awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- ======  NAVBAR  ====== -->
     <nav>
-      <div class="redirects">
-        <a href="./home.html">Home</a>
-        <a href="./doctor.html">Doctor list</a>
-        <a href="./appointment.html">Appointment</a>
-        <a href="./patient.html">Patient</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-      <div class="nav-logo">
-        <img
-          src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg"
-          alt="hospital-logo"
-        />
-      </div>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+
+        <div class="redirects">
+            <a href="./home.html">Home</a>
+            <a href="./doctor.html">Doctor list</a>
+            <a href="./appointment.html">Appointment</a>
+            <a href="./patient.html">Patient</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+
+        <div class="nav-logo">
+            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo">
+        </div>
     </nav>
-    <section>
-    <h1>Contact Info</h1>
-    <div class="contact-info">
-        <div>
-            <p>Emergency number +91 0000-123-7654</p>
+
+    <!-- ======  CONTACT SECTION  ====== -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+
+        <!-- 24/7 NUMBERS -->
+        <div class="hot-lines">
+            <div class="line">
+                <i class="fa-solid fa-phone"></i>
+                <p><strong>Emergency:</strong> +91 0000-123-7654</p>
+            </div>
+            <div class="line">
+                <i class="fa-solid fa-headset"></i>
+                <p><strong>Helpline:</strong> +91 7970-675-3232</p>
+            </div>
+            <span class="tag">24 / 7</span>
         </div>
-        <div>
-            <p>Helpline number +91 7970-675-3232</p>
+
+        <!-- ADDRESS + MAP -->
+        <div class="address-map">
+            <div class="address">
+                <h2>Heal Hospital</h2>
+                <p>123 Healthy Avenue, Med-City</p>
+                <p>Hyderabad, Telangana – 500 001</p>
+                <p><strong>Email:</strong> care@heal.com</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4897535603835!2d78.4746!3d17.3612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIxJzQwLjQiTiA3OMKwMjgnMjguNiJF!5e0!3m2!1sen!2sin!4v1674567890123!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <h1>24/7</h1>
-    </div>
+
+        <!-- QUICK MAIL FORM -->
+        <div class="mail-form">
+            <h2>Drop us a Message</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
     </section>
-  </body>
+</body>
 </html>
