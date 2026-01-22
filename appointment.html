@@ -3,22 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment-Heal</title>
+    <title>Appointment | Heal</title>
     <link rel="icon" href="./Screenshot 2026-01-13 081242.png"/>
-    <link rel="stylesheet" href="./home.css"/>
+    <link rel="stylesheet" href="./appointment.css"/>
 </head>
 <body>
+    <!-- ======  COMMON NAVBAR  ====== -->
     <nav>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+
         <div class="redirects">
-        <a href="./home.html">Home</a>
-        <a href="./doctor.html">Doctor list</a>
-        <a href="./appointment.html">Appointment</a>
-        <a href="./patient.html">Patient</a>
-        <a href="./contact.html">Contact</a>
+            <a href="./home.html">Home</a>
+            <a href="./doctor.html">Doctor list</a>
+            <a href="./appointment.html">Appointment</a>
+            <a href="./patient.html">Patient</a>
+            <a href="./contact.html">Contact</a>
         </div>
+
         <div class="nav-logo">
-            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo"/>
+            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo">
         </div>
     </nav>
+
+    <!-- ======  APPOINTMENT SECTION  ====== -->
+    <section class="appointment-section">
+        <h1>Book an Appointment</h1>
+
+        <div class="appointment-wrapper">
+            <!-- LEFT: FORM -->
+            <form action="./patient.html" method="get" class="appointment-form">
+                <!-- Doctor -->
+                <label for="doctor">Choose Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Select doctor</option>
+                    <option>Dr. Anita Reddy - Cardiology</option>
+                    <option>Dr. Rahul Nair - Neurology</option>
+                    <option>Dr. Priya Menon - Paediatrics</option>
+                    <option>Dr. Vikram Sinha - Orthopaedics</option>
+                    <option>Dr. Sneha Agarwal - Dermatology</option>
+                    <option>Dr. Arjun Mehta - Internal Medicine</option>
+                </select>
+
+                <!-- Date -->
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" min="2026-01-24" required>
+
+                <!-- Time -->
+                <label>Time Slot</label>
+                <div class="time-slots">
+                    <input type="radio" name="time" id="t1" value="09:00" required><label for="t1" class="slot">09:00</label>
+                    <input type="radio" name="time" id="t2" value="10:00"><label for="t2" class="slot">10:00</label>
+                    <input type="radio" name="time" id="t3" value="11:00"><label for="t3" class="slot">11:00</label>
+                    <input type="radio" name="time" id="t4" value="14:00"><label for="t4" class="slot">14:00</label>
+                    <input type="radio" name="time" id="t5" value="15:00"><label for="t5" class="slot">15:00</label>
+                    <input type="radio" name="time" id="t6" value="16:00"><label for="t6" class="slot">16:00</label>
+                </div>
+
+                <!-- Patient Details -->
+                <label for="name">Patient Name</label>
+                <input type="text" id="name" placeholder="Full name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <button type="submit" class="submit-btn">Confirm Appointment</button>
+            </form>
+
+            <!-- RIGHT: SUMMARY CARD -->
+            <aside class="summary-card">
+                <h2>Appointment Summary</h2>
+                <p>Please select a doctor, date and time to see the summary here.</p>
+                <ul id="summary-list"></ul>
+                <small>We'll send confirmation SMS & email within 15 minutes.</small>
+            </aside>
+        </div>
+    </section>
 </body>
 </html>
