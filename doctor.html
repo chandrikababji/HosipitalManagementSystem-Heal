@@ -1,24 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor-list</title>
-    <link rel="icon" href="./Screenshot 2026-01-13 081242.png"/>
-    <link rel="stylesheet" href="./home.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor-list | Heal</title>
+    <link rel="icon" href="./Screenshot 2026-01-13 081242.png" />
+    <link rel="stylesheet" href="./doctor.css" />
+  </head>
+  <body>
+    <!-- ======  COMMON NAVBAR  ====== -->
     <nav>
-        <div class="redirects">
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="redirects">
         <a href="./home.html">Home</a>
         <a href="./doctor.html">Doctor list</a>
         <a href="./appointment.html">Appointment</a>
         <a href="./patient.html">Patient</a>
         <a href="./contact.html">Contact</a>
-        </div>
-        <div class="nav-logo">
-            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo"/>
-        </div>
+      </div>
+
+      <div class="nav-logo">
+        <img
+          src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg"
+          alt="hospital-logo"
+        />
+      </div>
     </nav>
-</body>
+
+    <!-- ======  DOCTOR CARDS  ====== -->
+    <section class="doctor-section">
+      <h1>Our Specialists</h1>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="doc-card">
+          <img
+            src="https://desunwebsite-assets.s3.ap-south-1.amazonaws.com/desunhospital-com/wp-content/uploads/2024/12/05224129/Dr-Sreya-Mallick.jpg"
+            alt="Dr. Anita"
+          />
+          <div class="info">
+            <h2>Dr. Anita Reddy</h2>
+            <p class="dept">Cardiology</p>
+            <p class="exp">12 yrs experience</p>
+            <p class="qual">MBBS, MD (Cardio)</p>
+            <p class="fee">Consultation fee ₹800</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="doc-card">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=60"
+            alt="Dr. Rahul"
+          />
+          <div class="info">
+            <h2>Dr. Rahul Nair</h2>
+            <p class="dept">Neurology</p>
+            <p class="exp">15 yrs experience</p>
+            <p class="qual">MBBS, DM (Neuro)</p>
+            <p class="fee">Consultation fee ₹1,000</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="doc-card">
+          <img
+            src="https://www.drsudeshnasaha.in/wp-content/uploads/2025/03/Dr.-Sudeshna-Saha.jpeg"
+            alt="Dr. Priya"
+          />
+          <div class="info">
+            <h2>Dr. Priya Menon</h2>
+            <p class="dept">Paediatrics</p>
+            <p class="exp">10 yrs experience</p>
+            <p class="qual">MBBS, DCH</p>
+            <p class="fee">Consultation fee ₹700</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="doc-card">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=60"
+            alt="Dr. Vikram"
+          />
+          <div class="info">
+            <h2>Dr. Vikram Sinha</h2>
+            <p class="dept">Orthopaedics</p>
+            <p class="exp">14 yrs experience</p>
+            <p class="qual">MBBS, MS (Ortho)</p>
+            <p class="fee">Consultation fee ₹900</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="doc-card">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=60"
+            alt="Dr. Sneha"
+          />
+          <div class="info">
+            <h2>Dr. Sneha Agarwal</h2>
+            <p class="dept">Dermatology</p>
+            <p class="exp">8 yrs experience</p>
+            <p class="qual">MBBS, MD (Derm)</p>
+            <p class="fee">Consultation fee ₹750</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="doc-card">
+          <img
+            src="https://geimshospital.com/wp-content/uploads/2025/03/Dr.-Jasjit-Singh-Grey.webp"
+            alt="Dr. Arjun"
+          />
+          <div class="info">
+            <h2>Dr. Arjun Mehta</h2>
+            <p class="dept">Internal Medicine</p>
+            <p class="exp">11 yrs experience</p>
+            <p class="qual">MBBS, MD (Med)</p>
+            <p class="fee">Consultation fee ₹650</p>
+            <a href="./appointment.html" class="btn">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
