@@ -5,20 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Page - Heal</title>
     <link rel="icon" href="./Screenshot 2026-01-13 081242.png"/>
-    <link rel="stylesheet" href="./home.css"/>
+    <link rel="stylesheet" href="./patient.css"/>
 </head>
 <body>
+    <!-- ======  COMMON NAVBAR  ====== -->
     <nav>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+
         <div class="redirects">
-        <a href="./home.html">Home</a>
-        <a href="./doctor.html">Doctor list</a>
-        <a href="./appointment.html">Appointment</a>
-        <a href="./patient.html">Patient</a>
-        <a href="./contact.html">Contact</a>
+            <a href="./home.html">Home</a>
+            <a href="./doctor.html">Doctor list</a>
+            <a href="./appointment.html">Appointment</a>
+            <a href="./patient.html">Patient</a>
+            <a href="./contact.html">Contact</a>
         </div>
+
         <div class="nav-logo">
-            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo"/>
+            <img src="./WhatsApp Image 2026-01-18 at 12.17.54.jpeg" alt="hospital-logo">
         </div>
     </nav>
+
+    <!-- ======  PACKAGES SECTION  ====== -->
+    <section class="packages-section">
+        <h1>Available Packages</h1>
+
+        <div class="package-cards">
+            <!-- Card 1 -->
+            <div class="pkg-card">
+                <div class="pkg-info">
+                    <h3>Cardiology Check-up</h3>
+                    <p class="dept">Department: Cardiology</p>
+                    <p class="time">Time: 30 min</p>
+                    <p class="amount">Amount: ₹1,200</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="pkg-card">
+                <div class="pkg-info">
+                    <h3>Neurology Consult</h3>
+                    <p class="dept">Department: Neurology</p>
+                    <p class="time">Time: 45 min</p>
+                    <p class="amount">Amount: ₹1,500</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="pkg-card">
+                <div class="pkg-info">
+                    <h3>Paediatric Vaccine</h3>
+                    <p class="dept">Department: Paediatrics</p>
+                    <p class="time">Time: 20 min</p>
+                    <p class="amount">Amount: ₹800</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="pkg-card">
+                <div class="pkg-info">
+                    <h3>Ortho X-Ray Pack</h3>
+                    <p class="dept">Department: Orthopaedics</p>
+                    <p class="time">Time: 15 min</p>
+                    <p class="amount">Amount: ₹900</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="pkg-card">
+                <div class="pkg-info">
+                    <h3>Dermatology Screen</h3>
+                    <p class="dept">Department: Dermatology</p>
+                    <p class="time">Time: 25 min</p>
+                    <p class="amount">Amount: ₹1,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======  ACTION BUTTONS  ====== -->
+        <!-- ======  ACTION BUTTONS  ====== -->
+    <section class="action-buttons">
+        <button type="button" class="doc-btn" disabled>Previous Appointment Letter</button>
+        <button type="button" class="doc-btn" disabled>Previous Hospital Receipts</button>
+        <a href="./appointment.html" class="next-btn">Next Appointment</a>
+    </section>
 </body>
 </html>
