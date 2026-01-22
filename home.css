@@ -15,7 +15,18 @@ nav{
 }
 
 /* ----------  LOGO  ---------- */
-.nav-logo img{ height:50px; width: auto; }
+.nav-logo {
+    height: 100%;      /* = 50px, set by nav */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 1;
+}
+.nav-logo img {
+    height: 35px;      /* keep it smaller than 50px */
+    width: auto;
+    object-fit: contain;
+}
 
 /* ----------  LINKS ROW  ---------- */
 .redirects{
