@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(circle farthest-corner at 17.6% 50.7%, rgba(25,0,184,1) 0%, rgba(0,0,0,1) 90%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background-image: linear-gradient(92.7deg, rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2%);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form h2{
+    text-align: center;
+ }
+
+input {
+    height: 45px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #2323c8;
+    outline: none;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+button {
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2323c8;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #131383;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 30px 20px;
+        max-width: 350px;
+    }
+}
+
+/* Additional styling for required fields */
+input:required {
+    background-image: linear-gradient(to right, rgba(35, 35, 200, 0.1) 0%, transparent 10%);
+}
+
+input:invalid {
+    border-color: #ff6b6b;
+}
+
+input:valid {
+    border-color: #51cf66;
+}

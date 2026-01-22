@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heal Signup</title>
     <link rel="icon" href="./Screenshot 2026-01-13 081242.png"/>
-
+    <link rel="stylesheet" href="signup.css"/>
 </head>
 <body>
-    <form>
-        <input type="text" placeholder="First name" required/>
-        <input type="text" placeholder="Last name" required/>
-        <input type="text" placeholder="Phone number" required/>
-        <input type="text" placeholder="age"/>
-        <input type="password" placeholder="set password" required/>
-        <input type="password" placeholder="re-enter password" required/>
-        <a href="./home.html">
-            <button>Sign up</button>
-        </a>
+    <form action="./home.html" method="get">
+        <h2>Create Account</h2>
+
+        <input type="text" name="firstName" placeholder="First name" required/>
+        <input type="text" name="lastName"  placeholder="Last name"  required/>
+        <input type="tel"  name="phone"     placeholder="Phone number" required/>
+        <input type="number" name="age"     placeholder="Age" min="0"/>
+        <input type="password" name="pass"  placeholder="Set password" required/>
+        <input type="password" name="confirmPass" placeholder="Re-enter password" required/>
+
+        <button type="submit">Sign up</button>
     </form>
 </body>
 </html>
