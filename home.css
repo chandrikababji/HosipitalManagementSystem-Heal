@@ -166,3 +166,5 @@ body{ padding-top:40px; } /* make room for fixed nav */
     .stats{ flex-direction:column; align-items:center; }
     .site-footer{ flex-direction:column; text-align:center; }
 }
+
+
