@@ -32,15 +32,35 @@ nav{
 .redirects{
     display:flex;
     gap:25px;
+
+
 }
-.redirects a{
+ .redirects a{
     color:#fff;
     text-decoration:none;
     font-size:18px;
     white-space:nowrap;
     transition:.3s;
+    position: sticky;
+
 }
-.redirects a:hover{ font-weight:700; text-shadow:0 0 2px #fff; }
+
+
+
+/* Keep same size when active/clicked */
+.redirects a:focus,
+.redirects a:active {
+    font-size: 16px;
+    outline: none;
+}
+
+.redirects a:hover{ 
+    font-weight: 300;         
+    text-shadow: 0 0 2px #fff;
+    color: #E0FFFF;
+    text-decoration: underline;
+
+ }
 
 /* ----------  HAMBURGER (hidden on desktop)  ---------- */
 #nav-toggle{ display:none; }

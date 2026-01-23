@@ -39,8 +39,9 @@ nav{
     transition:.3s;
 }
 .redirects a:hover{
-    font-weight:700;
+    font-weight:300;
     text-shadow:0 0 2px #fff;
+    text-decoration: underline;
 }
 #nav-toggle{
     display:none;
