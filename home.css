@@ -1,5 +1,5 @@
 *{ margin:0; padding:0; box-sizing:border-box; }
-
+body{background:#f5f6fa;color:#333;padding-top:50px;}
 /* ----------  NAVBAR CORE  ---------- */
 nav{
     position:fixed;
@@ -83,8 +83,6 @@ nav{
 /* ----------  MOBILE: ≤768px  ---------- */
 @media(max-width:768px){
     .hamburger{ display:flex; }          /* show burger */
-    .nav-logo{ margin:0 auto; }          /* centre logo */
-
     .redirects{
         position:fixed;
         inset:50px 0 auto 0;             /* full-width below bar */
