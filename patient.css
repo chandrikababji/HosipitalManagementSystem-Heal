@@ -3,7 +3,11 @@
 body{background:#f5f6fa;color:#333;padding-top:50px;}
 
 /* NAVBAR (same as home) */
-nav{position:fixed;top:0;left:0;width:100%;height:50px;background:linear-gradient(177.6deg,rgba(20,0,113,1)15.3%,rgba(1,0,62,1)91.3%);display:flex;align-items:center;justify-content:space-between;padding:0 20px;z-index:1000;}
+nav{
+    position:fixed;top:0;left:0;width:100%;height:50px;background:linear-gradient(177.6deg,rgba(20,0,113,1)15.3%,rgba(1,0,62,1)91.3%);display:flex;align-items:center;justify-content:space-between;padding:0 20px;z-index:1000;
+    font-family: 'Poppins', sans-serif;   
+    font-weight: 300;
+}
 /* ----------  LOGO  ---------- */
 .nav-logo {
     height: 100%;      /* = 50px, set by nav */
