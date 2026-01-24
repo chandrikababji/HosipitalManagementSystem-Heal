@@ -11,7 +11,7 @@ body{
     padding-top:50px;
 }
 
-/*    NAVBAR (same as home) */
+/*    NAVBAR (same as home navbar) */
 nav{
     position:fixed;
     top:0;
@@ -28,7 +28,7 @@ nav{
     font-family: 'Poppins', sans-serif;   
     font-weight: 300;
 }
-/* ----------  LOGO  ---------- */
+/*  LOGO  */
 .nav-logo {
     height: 100%;      /* = 50px, set by nav */
     display: flex;
@@ -83,7 +83,7 @@ nav{
     #nav-toggle:checked ~ .hamburger span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
 }
 
-/*CONTACT SECTION  */
+/* Contact Section */
 .contact-section{
     max-width:1000px;
     margin:40px auto;
