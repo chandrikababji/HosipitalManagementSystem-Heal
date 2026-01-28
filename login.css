@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: radial-gradient(circle farthest-corner at 17.6% 50.7%, rgba(25,0,184,1) 0%, rgba(0,0,0,1) 90%);
+    background-image: radial-gradient(circle farthest-corner at 17.6% 50.7%, rgba(25,0,184,1) 0%, rgba(0,0,0,1) 90%); /* 17.6% from left and 50.7% from top */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .login-btn:hover {
@@ -102,7 +102,7 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* responsiveness for mobile screens */
 @media (max-width: 480px) {
     .login-box {
         padding: 30px 20px;
