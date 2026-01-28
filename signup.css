@@ -64,6 +64,9 @@ button:hover {
     background-color: #131383;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (max-width: 480px) {
